@@ -4,7 +4,7 @@ export const ContentContainer = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
-background-color: aliceblue;
+background-color: lightskyblue;
 width: 90%;
 margin: 0 auto;
 margin-top: 10vh;
