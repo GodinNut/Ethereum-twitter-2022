@@ -16,5 +16,5 @@ once it's done, you can run the app by command
 
     npm start
 
-It takes some time to fetch data from contract at the time you run the app, so please be patient.
+It takes some time to fetch data from contract at the time you run the app, so please BE PATIENT.
 If something went wrong and the app did not start, remove "GENERATE_SOURCEMAP=false && " from scripts of "start" in package.json
