@@ -9,7 +9,6 @@ import smartContract from '../service/contract';
 
 import { web3 } from '../service/contract';
 
-/* const moment = require("moment"); */
 
 const Tweet = ({ id, author, content, account }) => {
     const [edit, setEdit] = useState(false);
