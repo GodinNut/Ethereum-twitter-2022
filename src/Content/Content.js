@@ -38,7 +38,6 @@ export default function Content() {
     }, []);
 
     useEffect(() => {
-        /* smartContract.methods.getAllTweets().call().then(updateTweets); */
 
         let subscription = web3.eth.subscribe('newBlockHeaders', (error) => {
             if (!error) {
@@ -73,17 +72,6 @@ export default function Content() {
 
             <h2> Feed </h2>
                 {listOfTweets}
-                {/* {tweets.map((tweet) => {
-                    return (
-                        <Tweet
-                            key={tweet.id}
-                            author={tweet.author}
-                            content={tweet.content}
-                            id={tweet.id}
-                            account={account[0]}
-                        />
-                    );
-                })} */}
             </div>
         </ContentContainer>
     );
