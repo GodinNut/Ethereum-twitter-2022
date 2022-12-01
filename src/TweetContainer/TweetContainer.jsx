@@ -1,11 +1,6 @@
 import React from 'react'
 import { MainTweetDiv } from './styled'
 
-//PROPS
-    // id = {tweet.id}
-    // content= {tweet.content}
-    // author = {tweet.author}
-
 function TweetContainer(props) {
   return (
     <MainTweetDiv>
