@@ -22,4 +22,6 @@ or
 
 It takes some time to fetch data from contract at the time you run the app, so please BE PATIENT.
 
-If something went wrong and the app did not start, remove "GENERATE_SOURCEMAP=false && " from the scripts of "start" in package.json
+If something went wrong and the app did not start, remove "GENERATE_SOURCEMAP=false && " from the scripts of "start" in package.json. This error is potentially related to the OS based on our test.
+
+This is not a full functionality equipped frontend since we started from scratch with js. 
