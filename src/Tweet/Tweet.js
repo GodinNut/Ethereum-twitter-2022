@@ -26,16 +26,14 @@ const Tweet = ({ id, author, content, account }) => {
         }
     };
 
-    // I think we don't need this handler
+
     const handleChange = (event) => {
         setTweet(event.target.value);
     };
 
     const handleSubmit = async () => {
         const userAccount = await web3.eth.getAccounts();
-        smartContract.methods.addTweet(tweet, false).send({ from: userAccount[0] })/* .then(() => {
-            setEdit(false);
-        }) */;
+        smartContract.methods.addTweet(tweet, false).send({ from: userAccount[0] });
     };
 
 
