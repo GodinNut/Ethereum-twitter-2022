@@ -15,7 +15,6 @@ export default function Header() {
 
     useEffect(() => {
         if (window.ethereum) {
-            // Here I need to change 'eth_accounts' to our method
             window.ethereum.request({ method: 'eth_accounts'}).then(handleAccountsChanged).catch((err) => {
                 console.error(err);
             });
@@ -31,7 +30,6 @@ export default function Header() {
         }
     };
 
-    // here it calls a method called 'eth_requestAccounts' to connect user's MetaMask
     const enableMetamask = async () => {
         if (window.ethereum) {
             window.ethereum
